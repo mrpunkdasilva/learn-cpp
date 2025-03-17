@@ -1,0 +1,70 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-03-16T23:00:18.602239988"><title>Vari&aacute;veis em C++ | Learn C++</title><script type="application/json" id="virtual-toc-data">[{"id":"tipos-de-vari-veis","level":0,"title":"Tipos de Variáveis","anchor":"#tipos-de-vari-veis"},{"id":"declara-o-de-vari-veis","level":0,"title":"Declaração de Variáveis","anchor":"#declara-o-de-vari-veis"},{"id":"entrada-e-sa-da-de-dados-com-vari-veis","level":0,"title":"Entrada e Saída de Dados com Variáveis","anchor":"#entrada-e-sa-da-de-dados-com-vari-veis"},{"id":"exemplo-completo","level":0,"title":"Exemplo Completo","anchor":"#exemplo-completo"},{"id":"observa-es","level":0,"title":"Observações","anchor":"#observa-es"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link rel="icon" type="image/svg" sizes="16x16" href="images/logo-primary.svg"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Vari&aacute;veis em C++ | Learn C++"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Learn C++ Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/variaveis.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Vari&aacute;veis em C++ | Learn C++"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/variaveis.html#webpage",
+    "url": "writerside-documentation/variaveis.html",
+    "name": "Vari&aacute;veis em C++ | Learn C++",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Learn C++ Help"
+}</script><!-- End Schema.org --></head><body data-id="Variaveis" data-main-title="Variáveis em C++" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Learn C++  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Variaveis" id="Variaveis.md">Variáveis em C++</h1><p id="-e54n5i_3">Vari&aacute;veis s&atilde;o espa&ccedil;os na mem&oacute;ria do computador reservados para armazenar dados. Em C++, &eacute; necess&aacute;rio declarar o tipo de dado que a vari&aacute;vel ir&aacute; armazenar, al&eacute;m de, opcionalmente, atribuir um valor inicial a ela.</p><section class="chapter"><h2 id="tipos-de-vari-veis" data-toc="tipos-de-vari-veis">Tipos de Vari&aacute;veis</h2><p id="-e54n5i_10">Em C++, os tipos de vari&aacute;veis s&atilde;o divididos em tr&ecirc;s categorias principais:</p><section class="chapter"><h3 id="1-tipos-num-ricos" data-toc="1-tipos-num-ricos">1. Tipos Num&eacute;ricos</h3><ul class="list _bullet" id="-e54n5i_14"><li class="list__item" id="-e54n5i_15"><p><span class="control" id="-e54n5i_18"><code class="code" id="-e54n5i_23">int</code></span>: Armazena n&uacute;meros inteiros (positivos ou negativos). </p><br><p> Exemplo: <code class="code" id="-e54n5i_20">3</code>, <code class="code" id="-e54n5i_21">-4</code>, <code class="code" id="-e54n5i_22">100</code>.</p></li><li class="list__item" id="-e54n5i_16"><p><span class="control" id="-e54n5i_24"><code class="code" id="-e54n5i_28">double</code></span>: Armazena n&uacute;meros decimais com alta precis&atilde;o (muitas casas decimais). </p><br><p> Exemplo: <code class="code" id="-e54n5i_26">2.333333</code>, <code class="code" id="-e54n5i_27">3.14159</code>.</p></li><li class="list__item" id="-e54n5i_17"><p><span class="control" id="-e54n5i_29"><code class="code" id="-e54n5i_34">float</code></span>: Armazena n&uacute;meros decimais, mas com menos precis&atilde;o que <code class="code" id="-e54n5i_30">double</code>. </p><br><p> Exemplo: <code class="code" id="-e54n5i_32">2.939</code>, <code class="code" id="-e54n5i_33">9.5</code>.</p></li></ul></section><section class="chapter"><h3 id="2-tipos-de-caractere" data-toc="2-tipos-de-caractere">2. Tipos de Caractere</h3><ul class="list _bullet" id="-e54n5i_35"><li class="list__item" id="-e54n5i_36"><p><span class="control" id="-e54n5i_38"><code class="code" id="-e54n5i_44">char</code></span>: Armazena um &uacute;nico caractere. Deve ser colocado entre ap&oacute;strofos (<code class="code" id="-e54n5i_39">' '</code>). </p><br><p> Exemplo: <code class="code" id="-e54n5i_41">'A'</code>, <code class="code" id="-e54n5i_42">'z'</code>, <code class="code" id="-e54n5i_43">'$'</code>.</p></li><li class="list__item" id="-e54n5i_37"><p><span class="control" id="-e54n5i_45"><code class="code" id="-e54n5i_50">string</code></span>: Armazena uma cadeia de caracteres (texto). Deve ser colocado entre aspas (<code class="code" id="-e54n5i_46">&quot; &quot;</code>). </p><br><p> Exemplo: <code class="code" id="-e54n5i_48">&quot;Hello World&quot;</code>, <code class="code" id="-e54n5i_49">&quot;C++ &eacute; legal!&quot;</code>.</p></li></ul></section><section class="chapter"><h3 id="3-tipo-l-gico" data-toc="3-tipo-l-gico">3. Tipo L&oacute;gico</h3><ul class="list _bullet" id="-e54n5i_51"><li class="list__item" id="-e54n5i_53"><p><span class="control" id="-e54n5i_54"><code class="code" id="-e54n5i_60">bool</code></span>: Armazena valores booleanos, que podem ser <code class="code" id="-e54n5i_55">true</code> (verdadeiro) ou <code class="code" id="-e54n5i_56">false</code> (falso). </p><br><p> Exemplo: <code class="code" id="-e54n5i_58">true</code>, <code class="code" id="-e54n5i_59">false</code>.</p></li></ul></section></section><section class="chapter"><h2 id="declara-o-de-vari-veis" data-toc="declara-o-de-vari-veis">Declara&ccedil;&atilde;o de Vari&aacute;veis</h2><p id="-e54n5i_61">Em C++, existem duas formas de declarar vari&aacute;veis:</p><section class="chapter"><h3 id="1-declara-o-sem-inicializa-o" data-toc="1-declara-o-sem-inicializa-o">1. Declara&ccedil;&atilde;o sem Inicializa&ccedil;&atilde;o</h3><div class="code-block" data-lang="cpp">
+TIPO NOME;
+</div><ul class="list _bullet" id="-e54n5i_65"><li class="list__item" id="-e54n5i_68"><p>A vari&aacute;vel &eacute; criada, mas n&atilde;o recebe um valor inicial.</p></li><li class="list__item" id="-e54n5i_69"><p>Se for um tipo num&eacute;rico, o valor padr&atilde;o &eacute; <code class="code" id="-e54n5i_71">0</code>.</p></li><li class="list__item" id="-e54n5i_70"><p>Se for uma <code class="code" id="-e54n5i_72">string</code>, o valor padr&atilde;o &eacute; uma string vazia (<code class="code" id="-e54n5i_73">&quot;&quot;</code>).</p></li></ul><p id="-e54n5i_66">Exemplo:</p><div class="code-block" data-lang="cpp">
+int numero;
+double decimal;
+char letra;
+</div></section><section class="chapter"><h3 id="2-declara-o-com-inicializa-o" data-toc="2-declara-o-com-inicializa-o">2. Declara&ccedil;&atilde;o com Inicializa&ccedil;&atilde;o</h3><div class="code-block" data-lang="cpp">
+TIPO NOME = VALOR;
+</div><ul class="list _bullet" id="-e54n5i_75"><li class="list__item" id="-e54n5i_79"><p>A vari&aacute;vel &eacute; criada e j&aacute; recebe um valor inicial.</p></li></ul><p id="-e54n5i_76">Exemplo:</p><div class="code-block" data-lang="cpp">
+int idade = 25;
+double pi = 3.14159;
+bool isActive = true;
+string nome = &quot;João&quot;;
+</div></section></section><section class="chapter"><h2 id="entrada-e-sa-da-de-dados-com-vari-veis" data-toc="entrada-e-sa-da-de-dados-com-vari-veis">Entrada e Sa&iacute;da de Dados com Vari&aacute;veis</h2><section class="chapter"><h3 id="sa-da-de-dados-cout" data-toc="sa-da-de-dados-cout">Sa&iacute;da de Dados (<code class="code" id="-e54n5i_84">cout</code>)</h3><ul class="list _bullet" id="-e54n5i_83"><li class="list__item" id="-e54n5i_85"><p id="-e54n5i_87">O comando <code class="code" id="-e54n5i_88">cout</code> &eacute; usado para exibir dados na tela.</p></li><li class="list__item" id="-e54n5i_86"><p id="-e54n5i_89">Exemplo:</p><div class="code-block" data-lang="cpp">
+cout &lt;&lt; &quot;Olá, mundo!&quot;;
+</div></li></ul></section><section class="chapter"><h3 id="entrada-de-dados-cin" data-toc="entrada-de-dados-cin">Entrada de Dados (<code class="code" id="-e54n5i_94">cin</code>)</h3><ul class="list _bullet" id="-e54n5i_92"><li class="list__item" id="-e54n5i_95"><p id="-e54n5i_97">O comando <code class="code" id="-e54n5i_98">cin</code> &eacute; usado para receber dados do usu&aacute;rio e armazen&aacute;-los em uma vari&aacute;vel.</p></li><li class="list__item" id="-e54n5i_96"><p id="-e54n5i_99">Exemplo:</p><div class="code-block" data-lang="cpp">
+int numero;
+cout &lt;&lt; &quot;Digite um número: &quot;;
+cin &gt;&gt; numero;
+</div></li></ul></section></section><section class="chapter"><h2 id="exemplo-completo" data-toc="exemplo-completo">Exemplo Completo</h2><div class="code-block" data-lang="cpp">
+#include &lt;iostream&gt; // Biblioteca para entrada e saída
+using namespace std; // Usa o namespace padrão
+
+int main() {
+    // Declaração de variáveis
+    int idade;
+    double altura;
+    char inicial;
+    bool isEstudante;
+    string nome;
+
+    // Atribuição de valores
+    idade = 20;
+    altura = 1.75;
+    inicial = 'J';
+    isEstudante = true;
+    nome = &quot;João Silva&quot;;
+
+    // Entrada de dados
+    cout &lt;&lt; &quot;Digite sua idade: &quot;;
+    cin &gt;&gt; idade;
+
+    cout &lt;&lt; &quot;Digite sua altura: &quot;;
+    cin &gt;&gt; altura;
+
+    // Saída de dados
+    cout &lt;&lt; &quot;Nome: &quot; &lt;&lt; nome &lt;&lt; endl;
+    cout &lt;&lt; &quot;Idade: &quot; &lt;&lt; idade &lt;&lt; &quot; anos&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;Altura: &quot; &lt;&lt; altura &lt;&lt; &quot; metros&quot; &lt;&lt; endl;
+    cout &lt;&lt; &quot;Inicial: &quot; &lt;&lt; inicial &lt;&lt; endl;
+    cout &lt;&lt; &quot;É estudante? &quot; &lt;&lt; (isEstudante ? &quot;Sim&quot; : &quot;Não&quot;) &lt;&lt; endl;
+
+    return 0; // Indica que o programa foi executado com sucesso
+}
+</div></section><section class="chapter"><h2 id="observa-es" data-toc="observa-es">Observa&ccedil;&otilde;es</h2><ul class="list _bullet" id="-e54n5i_103"><li class="list__item" id="-e54n5i_104"><p>Todo comando em C++ deve ser finalizado com <code class="code" id="-e54n5i_107">;</code>.</p></li><li class="list__item" id="-e54n5i_105"><p>Vari&aacute;veis n&atilde;o inicializadas podem conter valores &quot;lixo&quot; (dados aleat&oacute;rios da mem&oacute;ria).</p></li><li class="list__item" id="-e54n5i_106"><p>Use nomes descritivos para vari&aacute;veis para melhorar a legibilidade do c&oacute;digo.</p></li></ul></section><div class="last-modified">Last modified: 17 março 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="programa-básico.html" class="navigation-links__prev">Estrutura B&aacute;sica de um Programa em C++</a><a href="constantes.html" class="navigation-links__next">Constantes e Declara&ccedil;&atilde;o M&uacute;ltipla de Vari&aacute;veis em C++</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>

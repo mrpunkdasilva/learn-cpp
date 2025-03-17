@@ -1,0 +1,60 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-03-16T23:00:18.602708596"><title>Constantes e Declara&ccedil;&atilde;o M&uacute;ltipla de Vari&aacute;veis em C++ | Learn C++</title><script type="application/json" id="virtual-toc-data">[{"id":"constantes","level":0,"title":"Constantes","anchor":"#constantes"},{"id":"declara-o-m-ltipla-de-vari-veis","level":0,"title":"Declaração Múltipla de Variáveis","anchor":"#declara-o-m-ltipla-de-vari-veis"},{"id":"exemplo-completo","level":0,"title":"Exemplo Completo","anchor":"#exemplo-completo"},{"id":"observa-es","level":0,"title":"Observações","anchor":"#observa-es"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link rel="icon" type="image/svg" sizes="16x16" href="images/logo-primary.svg"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Constantes e Declara&ccedil;&atilde;o M&uacute;ltipla de Vari&aacute;veis em C++ | Learn C++"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Learn C++ Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/constantes.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Constantes e Declara&ccedil;&atilde;o M&uacute;ltipla de Vari&aacute;veis em C++ | Learn C++"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/constantes.html#webpage",
+    "url": "writerside-documentation/constantes.html",
+    "name": "Constantes e Declara&ccedil;&atilde;o M&uacute;ltipla de Vari&aacute;veis em C++ | Learn C++",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Learn C++ Help"
+}</script><!-- End Schema.org --></head><body data-id="Constantes" data-main-title="Constantes e Declaração Múltipla de Variáveis em C++" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Learn C++  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Constantes" id="Constantes.md">Constantes e Declaração Múltipla de Variáveis em C++</h1><section class="chapter"><h2 id="constantes" data-toc="constantes">Constantes</h2><p id="chqlkm_8">Constantes s&atilde;o valores que n&atilde;o podem ser alterados durante a execu&ccedil;&atilde;o do programa. Diferente de vari&aacute;veis, que podem ter seus valores modificados, as constantes permanecem com o mesmo valor definido inicialmente.</p><section class="chapter"><h3 id="como-definir-constantes" data-toc="como-definir-constantes">Como Definir Constantes</h3><p id="chqlkm_12">Em C++, uma constante pode ser definida usando o comando <code class="code" id="chqlkm_15">#define</code>. A sintaxe &eacute; a seguinte:</p><div class="code-block" data-lang="cpp">
+#define NOME_DA_CONSTANTE valor
+</div><ul class="list _bullet" id="chqlkm_14"><li class="list__item" id="chqlkm_16"><p>O <code class="code" id="chqlkm_18">#</code> (jogo da velha) indica que &eacute; uma diretiva de pr&eacute;-processador.</p></li><li class="list__item" id="chqlkm_17"><p>O valor da constante pode ser um n&uacute;mero, texto ou at&eacute; mesmo um comando.</p></li></ul></section><section class="chapter"><h3 id="exemplos-de-constantes" data-toc="exemplos-de-constantes">Exemplos de Constantes</h3><ol class="list _decimal" id="chqlkm_19" type="1"><li class="list__item" id="chqlkm_20"><p id="chqlkm_22"><span class="control" id="chqlkm_24">Constante com valor de texto</span>:</p><div class="code-block" data-lang="cpp">
+#define nome &quot;Gustavo Shoter&quot;
+</div></li><li class="list__item" id="chqlkm_21"><p id="chqlkm_25"><span class="control" id="chqlkm_28">Constante com comando</span>:</p><div class="code-block" data-lang="cpp">
+#define cumprimento cout &lt;&lt; &quot;Hello World \n&quot;;
+</div><p id="chqlkm_27">Neste caso, a constante <code class="code" id="chqlkm_29">cumprimento</code> cont&eacute;m um comando <code class="code" id="chqlkm_30">cout</code> que ser&aacute; executado sempre que a constante for chamada.</p></li></ol></section><section class="chapter"><h3 id="uso-de-constantes-no-programa" data-toc="uso-de-constantes-no-programa">Uso de Constantes no Programa</h3><p id="chqlkm_31">Para usar uma constante, basta cham&aacute;-la pelo nome no c&oacute;digo. Exemplo:</p><div class="code-block" data-lang="cpp">
+cout &lt;&lt; &quot;\n&quot; &lt;&lt; nome &lt;&lt; &quot;\n&quot;; // Exibe o valor da constante &quot;nome&quot;
+cumprimento; // Executa o comando armazenado na constante &quot;cumprimento&quot;
+</div></section></section><section class="chapter"><h2 id="declara-o-m-ltipla-de-vari-veis" data-toc="declara-o-m-ltipla-de-vari-veis">Declara&ccedil;&atilde;o M&uacute;ltipla de Vari&aacute;veis</h2><p id="chqlkm_34">Em C++, &eacute; poss&iacute;vel declarar v&aacute;rias vari&aacute;veis do mesmo tipo em uma &uacute;nica linha. Isso torna o c&oacute;digo mais compacto e organizado.</p><section class="chapter"><h3 id="regras-para-declara-o-m-ltipla" data-toc="regras-para-declara-o-m-ltipla">Regras para Declara&ccedil;&atilde;o M&uacute;ltipla</h3><ol class="list _decimal" id="chqlkm_39" type="1"><li class="list__item" id="chqlkm_40"><p>Todas as vari&aacute;veis devem ser do <span class="control" id="chqlkm_42">mesmo tipo</span>.</p></li><li class="list__item" id="chqlkm_41"><p>Separe os nomes das vari&aacute;veis com <span class="control" id="chqlkm_43">v&iacute;rgulas</span>.</p></li></ol></section><section class="chapter"><h3 id="sintaxe" data-toc="sintaxe">Sintaxe</h3><div class="code-block" data-lang="cpp">
+TIPO nome1, nome2, nome3;
+</div><p id="chqlkm_45">Isso &eacute; equivalente a:</p><div class="code-block" data-lang="cpp">
+TIPO nome1;
+TIPO nome2;
+TIPO nome3;
+</div></section><section class="chapter"><h3 id="exemplo-de-declara-o-m-ltipla" data-toc="exemplo-de-declara-o-m-ltipla">Exemplo de Declara&ccedil;&atilde;o M&uacute;ltipla</h3><div class="code-block" data-lang="cpp">
+int vidas, tiros, balas;
+</div></section><section class="chapter"><h3 id="inicializa-o-m-ltipla" data-toc="inicializa-o-m-ltipla">Inicializa&ccedil;&atilde;o M&uacute;ltipla</h3><p id="chqlkm_48">Voc&ecirc; tamb&eacute;m pode declarar e inicializar v&aacute;rias vari&aacute;veis na mesma linha:</p><div class="code-block" data-lang="cpp">
+int nota1 = 6, nota2 = 6, media = 6;
+</div><p id="chqlkm_50">Isso &eacute; equivalente a:</p><div class="code-block" data-lang="cpp">
+int nota1 = 6;
+int nota2 = 6;
+int media = 6;
+</div></section></section><section class="chapter"><h2 id="exemplo-completo" data-toc="exemplo-completo">Exemplo Completo</h2><div class="code-block" data-lang="cpp">
+#include &lt;iostream&gt; // Biblioteca para entrada e saída
+using namespace std; // Usa o namespace padrão
+
+// Definição de constantes
+#define nome &quot;Gustavo Shoter&quot;
+#define cumprimento cout &lt;&lt; &quot;Hello World \n&quot;;
+
+int main() {
+    // Declaração múltipla de variáveis
+    int vidas, tiros, balas;
+
+    // Declaração e inicialização múltipla de variáveis
+    int nota1 = 6, nota2 = 6, media = 6;
+
+    // Uso de constantes
+    cout &lt;&lt; &quot;\n&quot; &lt;&lt; nome &lt;&lt; &quot;\n&quot;; // Exibe o valor da constante &quot;nome&quot;
+    cumprimento; // Executa o comando armazenado na constante &quot;cumprimento&quot;
+
+    return 0; // Indica que o programa foi executado com sucesso
+}
+</div></section><section class="chapter"><h2 id="observa-es" data-toc="observa-es">Observa&ccedil;&otilde;es</h2><ul class="list _bullet" id="chqlkm_55"><li class="list__item" id="chqlkm_56"><p><span class="control" id="chqlkm_59">Constantes</span>: Use <code class="code" id="chqlkm_60">#define</code> para valores que n&atilde;o mudam durante a execu&ccedil;&atilde;o do programa.</p></li><li class="list__item" id="chqlkm_57"><p><span class="control" id="chqlkm_61">Declara&ccedil;&atilde;o M&uacute;ltipla</span>: &Uacute;til para reduzir a repeti&ccedil;&atilde;o de c&oacute;digo ao declarar vari&aacute;veis do mesmo tipo.</p></li><li class="list__item" id="chqlkm_58"><p><span class="control" id="chqlkm_62">Inicializa&ccedil;&atilde;o M&uacute;ltipla</span>: Permite declarar e atribuir valores a v&aacute;rias vari&aacute;veis em uma &uacute;nica linha.</p></li></ul></section><div class="last-modified">Last modified: 17 março 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="variaveis.html" class="navigation-links__prev">Vari&aacute;veis em C++</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
