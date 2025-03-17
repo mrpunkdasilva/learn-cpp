@@ -1,0 +1,71 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-03-16T23:21:13.338953617"><title>Incremento, Decremento e Opera&ccedil;&otilde;es em C++ | Learn C++</title><script type="application/json" id="virtual-toc-data">[{"id":"1-incremento","level":0,"title":"1. Incremento","anchor":"#1-incremento"},{"id":"2-decremento","level":0,"title":"2. Decremento","anchor":"#2-decremento"},{"id":"3-outras-opera-es-combinadas","level":0,"title":"3. Outras Operações Combinadas","anchor":"#3-outras-opera-es-combinadas"},{"id":"4-diferen-a-entre-pr-e-p-s-incremento-decremento","level":0,"title":"4. Diferença Entre Pré e Pós-Incremento/Decremento","anchor":"#4-diferen-a-entre-pr-e-p-s-incremento-decremento"},{"id":"5-exemplo-completo","level":0,"title":"5. Exemplo Completo","anchor":"#5-exemplo-completo"},{"id":"6-observa-es-finais","level":0,"title":"6. Observações Finais","anchor":"#6-observa-es-finais"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link rel="icon" type="image/svg" sizes="16x16" href="images/logo-primary.svg"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Incremento, Decremento e Opera&ccedil;&otilde;es em C++ | Learn C++"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Learn C++ Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/decremento.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Incremento, Decremento e Opera&ccedil;&otilde;es em C++ | Learn C++"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/decremento.html#webpage",
+    "url": "writerside-documentation/decremento.html",
+    "name": "Incremento, Decremento e Opera&ccedil;&otilde;es em C++ | Learn C++",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Learn C++ Help"
+}</script><!-- End Schema.org --></head><body data-id="Decremento" data-main-title="Incremento, Decremento e Operações em C++" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Learn C++  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Decremento" id="Decremento.md">Incremento, Decremento e Operações em C++</h1><p id="-ig3q0k_3">Em C++, <span class="control" id="-ig3q0k_11">incremento</span> e <span class="control" id="-ig3q0k_12">decremento</span> s&atilde;o opera&ccedil;&otilde;es usadas para aumentar ou diminuir o valor de uma vari&aacute;vel. Al&eacute;m disso, existem opera&ccedil;&otilde;es combinadas que permitem realizar c&aacute;lculos diretamente sobre o valor atual de uma vari&aacute;vel. Vamos explorar esses conceitos em detalhes.</p><section class="chapter"><h2 id="1-incremento" data-toc="1-incremento">1. Incremento</h2><p id="-ig3q0k_13">O <span class="control" id="-ig3q0k_17">incremento</span> &eacute; usado para adicionar um valor a uma vari&aacute;vel. Existem tr&ecirc;s formas principais de fazer isso:</p><section class="chapter"><h3 id="forma-completa_1" data-toc="forma-completa_1">Forma Completa</h3><div class="code-block" data-lang="cpp">
+n1 = n1 + 1; // Adiciona 1 ao valor de `n1`
+</div></section><section class="chapter"><h3 id="forma-abreviada_1" data-toc="forma-abreviada_1">Forma Abreviada</h3><div class="code-block" data-lang="cpp">
+n1 += 1; // Adiciona 1 ao valor de `n1`
+</div></section><section class="chapter"><h3 id="forma-mais-contra-da_1" data-toc="forma-mais-contra-da_1">Forma Mais Contra&iacute;da</h3><div class="code-block" data-lang="cpp">
+n1++; // Adiciona 1 ao valor de `n1`
+</div></section></section><section class="chapter"><h2 id="2-decremento" data-toc="2-decremento">2. Decremento</h2><p id="-ig3q0k_22">O <span class="control" id="-ig3q0k_26">decremento</span> &eacute; usado para subtrair um valor de uma vari&aacute;vel. Assim como o incremento, ele pode ser feito de tr&ecirc;s maneiras:</p><section class="chapter"><h3 id="forma-completa" data-toc="forma-completa">Forma Completa</h3><div class="code-block" data-lang="cpp">
+n1 = n1 - 1; // Subtrai 1 do valor de `n1`
+</div></section><section class="chapter"><h3 id="forma-abreviada" data-toc="forma-abreviada">Forma Abreviada</h3><div class="code-block" data-lang="cpp">
+n1 -= 1; // Subtrai 1 do valor de `n1`
+</div></section><section class="chapter"><h3 id="forma-mais-contra-da" data-toc="forma-mais-contra-da">Forma Mais Contra&iacute;da</h3><div class="code-block" data-lang="cpp">
+n1--; // Subtrai 1 do valor de `n1`
+</div></section></section><section class="chapter"><h2 id="3-outras-opera-es-combinadas" data-toc="3-outras-opera-es-combinadas">3. Outras Opera&ccedil;&otilde;es Combinadas</h2><p id="-ig3q0k_31">Al&eacute;m de incrementar e decrementar, voc&ecirc; pode realizar outras opera&ccedil;&otilde;es diretamente sobre o valor de uma vari&aacute;vel:</p><section class="chapter"><h3 id="multiplica-o" data-toc="multiplica-o">Multiplica&ccedil;&atilde;o</h3><div class="code-block" data-lang="cpp">
+n1 *= 12; // Multiplica `n1` por 12
+</div></section><section class="chapter"><h3 id="divis-o" data-toc="divis-o">Divis&atilde;o</h3><div class="code-block" data-lang="cpp">
+n1 /= 5; // Divide `n1` por 5
+</div></section><section class="chapter"><h3 id="m-dulo-resto-da-divis-o" data-toc="m-dulo-resto-da-divis-o">M&oacute;dulo (Resto da Divis&atilde;o)</h3><div class="code-block" data-lang="cpp">
+n1 %= 7; // Calcula o resto da divisão de `n1` por 7
+</div></section></section><section class="chapter"><h2 id="4-diferen-a-entre-pr-e-p-s-incremento-decremento" data-toc="4-diferen-a-entre-pr-e-p-s-incremento-decremento">4. Diferen&ccedil;a Entre Pr&eacute; e P&oacute;s-Incremento/Decremento</h2><p id="-ig3q0k_39">A principal diferen&ccedil;a entre <span class="control" id="-ig3q0k_42">pr&eacute;</span> e <span class="control" id="-ig3q0k_43">p&oacute;s-incremento/decremento</span> est&aacute; no momento em que a vari&aacute;vel &eacute; atualizada.</p><section class="chapter"><h3 id="p-s-incremento-decremento" data-toc="p-s-incremento-decremento">P&oacute;s-Incremento/Decremento</h3><ul class="list _bullet" id="-ig3q0k_44"><li class="list__item" id="-ig3q0k_45"><p id="-ig3q0k_48"><span class="control" id="-ig3q0k_49">Funcionamento</span>: Primeiro usa o valor atual da vari&aacute;vel e <span class="control" id="-ig3q0k_50">depois</span> incrementa/decrementa.</p></li><li class="list__item" id="-ig3q0k_46"><p id="-ig3q0k_51"><span class="control" id="-ig3q0k_53">Sintaxe</span>:</p><div class="code-block" data-lang="cpp">
+n1++; // Pós-incremento
+n1--; // Pós-decremento
+</div></li><li class="list__item" id="-ig3q0k_47"><p id="-ig3q0k_54"><span class="control" id="-ig3q0k_56">Exemplo</span>:</p><div class="code-block" data-lang="cpp">
+int n1 = 10;
+cout &lt;&lt; n1++; // Exibe 10 (valor atual) e depois incrementa para 11
+</div></li></ul></section><section class="chapter"><h3 id="pr-incremento-decremento" data-toc="pr-incremento-decremento">Pr&eacute;-Incremento/Decremento</h3><ul class="list _bullet" id="-ig3q0k_57"><li class="list__item" id="-ig3q0k_59"><p id="-ig3q0k_62"><span class="control" id="-ig3q0k_63">Funcionamento</span>: Primeiro incrementa/decrementa a vari&aacute;vel e <span class="control" id="-ig3q0k_64">depois</span> usa o valor atualizado.</p></li><li class="list__item" id="-ig3q0k_60"><p id="-ig3q0k_65"><span class="control" id="-ig3q0k_67">Sintaxe</span>:</p><div class="code-block" data-lang="cpp">
+++n1; // Pré-incremento
+--n1; // Pré-decremento
+</div></li><li class="list__item" id="-ig3q0k_61"><p id="-ig3q0k_68"><span class="control" id="-ig3q0k_70">Exemplo</span>:</p><div class="code-block" data-lang="cpp">
+int n1 = 10;
+cout &lt;&lt; ++n1; // Incrementa para 11 e depois exibe 11
+</div></li></ul></section></section><section class="chapter"><h2 id="5-exemplo-completo" data-toc="5-exemplo-completo">5. Exemplo Completo</h2><p id="-ig3q0k_71">Aqui est&aacute; um exemplo que ilustra o uso de incremento, decremento e opera&ccedil;&otilde;es combinadas:</p><div class="code-block" data-lang="cpp">
+#include &lt;iostream&gt; // Biblioteca para entrada e saída
+using namespace std; // Usa o namespace padrão
+
+int main() {
+    int n1 = 10;
+
+    // Pós-incremento
+    cout &lt;&lt; &quot;Pós-incremento: &quot; &lt;&lt; n1++ &lt;&lt; &quot;\n&quot;; // Exibe 10 e depois incrementa para 11
+
+    // Pré-incremento
+    cout &lt;&lt; &quot;Pré-incremento: &quot; &lt;&lt; ++n1 &lt;&lt; &quot;\n&quot;; // Incrementa para 12 e depois exibe 12
+
+    // Operações combinadas
+    n1 *= 2; // Multiplica n1 por 2 (12 * 2 = 24)
+    cout &lt;&lt; &quot;Multiplicação: &quot; &lt;&lt; n1 &lt;&lt; &quot;\n&quot;;
+
+    n1 /= 3; // Divide n1 por 3 (24 / 3 = 8)
+    cout &lt;&lt; &quot;Divisão: &quot; &lt;&lt; n1 &lt;&lt; &quot;\n&quot;;
+
+    n1 %= 5; // Calcula o resto da divisão de n1 por 5 (8 % 5 = 3)
+    cout &lt;&lt; &quot;Módulo: &quot; &lt;&lt; n1 &lt;&lt; &quot;\n&quot;;
+
+    return 0; // Indica que o programa foi executado com sucesso
+}
+</div></section><section class="chapter"><h2 id="6-observa-es-finais" data-toc="6-observa-es-finais">6. Observa&ccedil;&otilde;es Finais</h2><ul class="list _bullet" id="-ig3q0k_74"><li class="list__item" id="-ig3q0k_75"><p><span class="control" id="-ig3q0k_78">Incremento/Decremento</span>: Use para aumentar ou diminuir o valor de uma vari&aacute;vel de forma eficiente.</p></li><li class="list__item" id="-ig3q0k_76"><p><span class="control" id="-ig3q0k_79">Pr&eacute; vs P&oacute;s</span>: Escolha entre pr&eacute; e p&oacute;s-incremento/decremento dependendo se voc&ecirc; precisa do valor antes ou depois da opera&ccedil;&atilde;o.</p></li><li class="list__item" id="-ig3q0k_77"><p><span class="control" id="-ig3q0k_80">Opera&ccedil;&otilde;es Combinadas</span>: Permitem realizar c&aacute;lculos diretamente sobre o valor de uma vari&aacute;vel, simplificando o c&oacute;digo.</p></li></ul></section><div class="last-modified">Last modified: 17 março 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="operadores-aritmeticos.html" class="navigation-links__prev">Vari&aacute;veis Globais, Locais e Operadores Aritm&eacute;ticos em C++</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
